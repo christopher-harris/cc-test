@@ -1,0 +1,3 @@
+[submodule "projects/hands-on-labs"]
+	path = projects/hands-on-labs
+	url = https://github.com/christopher-harris/CloudCraft_HOL_Test
