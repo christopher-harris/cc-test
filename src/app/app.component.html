@@ -7,10 +7,12 @@
     <mat-toolbar>
       <span>My Application</span>
     </mat-toolbar>
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button>
-    <router-outlet></router-outlet>
+    <div class="content-container">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+      <router-outlet></router-outlet>
+    </div>
   </div>
 
 </mat-drawer-container>
