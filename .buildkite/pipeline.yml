@@ -2,4 +2,4 @@ steps:
   - command: "./lint.sh"
     plugins:
       - docker#v3.7.0:
-        image: "node:12.11.1"
+          image: "node:12.11.1"
