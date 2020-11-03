@@ -3,6 +3,7 @@ steps:
       - "npm install"
       - "npm run ng lint"
       - "npm run ng deploy"
+      - "npx angular-cli-ghpages — dir=dist/cc-test"
     env:
       NG_CLI_ANALYTICS: ci
     plugins:
