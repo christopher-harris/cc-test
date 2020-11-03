@@ -9,13 +9,12 @@ import {NavComponent} from './nav/nav.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HolSharedModule} from '../../projects/hands-on-labs/src/app/hol.module';
 import {MaterialModule} from './shared/material/material.module';
-import {LaAuthModule} from '@a-cloud-guru/la-auth';
 import {environment} from '../environments/environment';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { NZ_I18N } from 'ng-zorro-antd/i18n';
-import { en_US } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {NZ_I18N} from 'ng-zorro-antd/i18n';
+import {en_US} from 'ng-zorro-antd/i18n';
+import {registerLocaleData} from '@angular/common';
 import en from '@angular/common/locales/en';
 
 registerLocaleData(en);
@@ -33,11 +32,10 @@ registerLocaleData(en);
     HolSharedModule.forRoot(),
     BrowserAnimationsModule,
     MaterialModule,
-    LaAuthModule.forRoot(environment),
     FormsModule,
     HttpClientModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [{provide: NZ_I18N, useValue: en_US}],
   bootstrap: [AppComponent]
 })
 export class AppModule {

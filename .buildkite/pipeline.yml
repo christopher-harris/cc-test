@@ -1,8 +1,10 @@
 steps:
-  - command: "./.buildkite/lint.sh"
+  - command:
+      - "npm install"
+      - "npm run ng lint"
     env:
       NG_CLI_ANALYTICS: ci
     plugins:
       - docker#v3.7.0:
           image: "node:12.11.1"
-          propagate-environment: true
+          propagate-environment: true=
