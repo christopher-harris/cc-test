@@ -2,6 +2,16 @@ steps:
   - command:
       - "npm install"
       - "npm run ng lint"
+    label: "Lint"
+    env:
+      NG_CLI_ANALYTICS: ci
+    plugins:
+      - docker#v3.7.0:
+          image: "node:12.11.1"
+          propagate-environment: true
+  - block: "Release to GH-Pages"
+  - command:
+      - "npm install"
       - "npm run deploy"
     env:
       NG_CLI_ANALYTICS: ci
@@ -9,3 +19,5 @@ steps:
       - docker#v3.7.0:
           image: "node:12.11.1"
           propagate-environment: true
+    branches: "master"
+    label: "deploy"
