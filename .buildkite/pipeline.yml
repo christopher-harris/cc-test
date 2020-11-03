@@ -1,5 +1,7 @@
 steps:
   - command: "./.buildkite/lint.sh"
+    env:
+      NG_CLI_ANALYTICS: ci
     plugins:
       - docker#v3.7.0:
           image: "node:12.11.1"
