@@ -497,5 +497,8 @@
       }
     }
   },
-  "defaultProject": "cc-test"
+  "defaultProject": "cc-test",
+  "cli": {
+    "analytics": false
+  }
 }
