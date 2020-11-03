@@ -1,2 +1,2 @@
 npm install
-ng lint
+npm run ng lint
