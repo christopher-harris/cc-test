@@ -11,8 +11,6 @@
   },
   "private": true,
   "dependencies": {
-    "@a-cloud-guru/la-auth": "^0.2.6",
-    "@a-cloud-guru/material": "^0.0.38",
     "@angular/animations": "~10.2.0",
     "@angular/cdk": "^10.2.6",
     "@angular/common": "~10.2.0",
