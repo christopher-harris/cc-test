@@ -1,0 +1,3 @@
+steps:
+  - label: "CC Test Pipeline Label"
+    command: echo "Hello!"
