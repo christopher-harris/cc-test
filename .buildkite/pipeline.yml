@@ -9,8 +9,11 @@ steps:
       - docker#v3.7.0:
           image: "node:12.11.1"
           propagate-environment: true
+  - wait
   - block: "Release to GH-Pages"
-  - command:
+  - label: "deploy"
+    branches: "master"
+    command:
       - "npm install"
       - "npm run deploy"
     env:
@@ -19,5 +22,3 @@ steps:
       - docker#v3.7.0:
           image: "node:12.11.1"
           propagate-environment: true
-    branches: "master"
-    label: "deploy"
