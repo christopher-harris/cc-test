@@ -2,7 +2,7 @@ steps:
   - command:
       - "npm install"
       - "npm run ng lint"
-      - "npm run ng deploy"
+      - "npm run ng deploy --base-href=https://christopher-harris.github.io/cc-test/"
     env:
       NG_CLI_ANALYTICS: ci
     plugins:
