@@ -2,6 +2,7 @@ steps:
   - command:
       - "npm install"
       - "npm run ng lint"
+      - "npm run ng deploy"
     env:
       NG_CLI_ANALYTICS: ci
     plugins:
