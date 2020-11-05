@@ -9,5 +9,5 @@ steps:
       NG_CLI_ANALYTICS: ci
     plugins:
       - docker#v3.7.0:
-          image: "node:12.11.1"
+          image: "acloudgurudevs/acg:12.14.0"
           propagate-environment: true
