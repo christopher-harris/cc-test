@@ -3,4 +3,11 @@ steps:
     - cd projects/hands-on-labs
     - git checkout ${HOL_BRANCH}
     - cd ../..
+    - npm i
     - npm run test:labs
+    env:
+      NG_CLI_ANALYTICS: ci
+    plugins:
+      - docker#v3.7.0:
+          image: "node:12.11.1"
+          propagate-environment: true
