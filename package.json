@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "ng deploy --base-href=https://christopher-harris.github.io/cc-test/ --no-silent",
-    "test:labs": "ng test hands-on-labs"
+    "test:labs": "ng test hands-on-labs",
+    "test:labs:ci": "ng test hands-on-labs --browsers=ChromeHeadless --watch=false"
   },
   "private": true,
   "dependencies": {
