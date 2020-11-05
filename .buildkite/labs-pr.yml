@@ -4,7 +4,7 @@ steps:
     - git checkout ${HOL_BRANCH}
     - cd ../..
     - npm i
-    - npm run test:labs
+    - npm run test:labs:ci
     env:
       NG_CLI_ANALYTICS: ci
     plugins:
