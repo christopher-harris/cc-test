@@ -1,2 +1,6 @@
 steps:
-  - command: echo "foo"
+  - command: 
+    - cd projects/hands-on-labs
+    - git checkout ${HOL_BRANCH}
+    - cd ../..
+    - npm run test:labs
