@@ -17,6 +17,7 @@ const routes: Routes = [
     path: 'hands-on-labs',
     loadChildren: () => import('../../projects/hands-on-labs/src/app/hol.module').then((m) => m.HolModule)
   },
+  { path: 'courses', loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule) },
   {path: '**', redirectTo: '/app1/one'}
 ];
 
