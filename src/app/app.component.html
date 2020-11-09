@@ -5,12 +5,12 @@
 
   <div class="example-sidenav-content">
     <mat-toolbar>
-      <span>My Application</span>
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>CloudCraft</span>
     </mat-toolbar>
     <div class="content-container">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
-      </button>
       <router-outlet></router-outlet>
       <br>
       <br>
